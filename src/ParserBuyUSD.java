@@ -28,7 +28,7 @@ public class ParserBuyUSD {
                 Elements row1 = row.select("div.quote__office__cell");
                 bankName = row1.select("a.quote__office__one__name").text();
                 phone = row1.select("div.quote__office__one__phone").text();
-                inf = " в " + bankName + " " + phone;
+                inf = bankName + " " + phone;
                 proposalList.add(new Proposal(valueInt, inf));
             }
 
